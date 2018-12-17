@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/ui.dart' show Offset, PointerDeviceKind;
+import '../../foundation.dart';
+import '../../ui.dart' show Offset, PointerDeviceKind;
 
-export 'package:flutter/ui.dart' show Offset, PointerDeviceKind;
+export '../../ui.dart' show Offset, PointerDeviceKind;
 
 /// The bit of [PointerEvent.buttons] that corresponds to the primary mouse button.
 ///
@@ -380,8 +380,7 @@ class PointerHoverEvent extends PointerEvent {
     double orientation: 0.0,
     double tilt: 0.0,
     bool synthesized: false,
-  })
-      : super(
+  }) : super(
           timeStamp: timeStamp,
           kind: kind,
           device: device,
@@ -480,8 +479,7 @@ class PointerMoveEvent extends PointerEvent {
     double orientation: 0.0,
     double tilt: 0.0,
     bool synthesized: false,
-  })
-      : super(
+  }) : super(
           timeStamp: timeStamp,
           pointer: pointer,
           kind: kind,

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/ui.dart' as ui show lerpDouble, WindowPadding;
+import '../../ui.dart' as ui show lerpDouble, WindowPadding;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'basic_types.dart';
 
@@ -372,7 +372,7 @@ class EdgeInsets extends EdgeInsetsGeometry {
   ///
   /// If you need the current system padding or view insets in the context of a
   /// widget, consider using [MediaQuery.of] to obtain these values rather than
-  /// using the value from [package:flutter/ui.dart.window], so that you get notified of
+  /// using the value from [../../ui.dart.window], so that you get notified of
   /// changes.
   EdgeInsets.fromWindowPadding(
       ui.WindowPadding padding, double devicePixelRatio)

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/ui.dart';
+import '../../ui.dart';
 
 /// Whether we've been built in release mode.
 const bool _kReleaseMode = const bool.fromEnvironment("dart.vm.product");

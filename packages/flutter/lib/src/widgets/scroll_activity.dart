@@ -4,11 +4,11 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/physics.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/scheduler.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../physics.dart';
+import '../../rendering.dart';
+import '../../scheduler.dart';
 
 import 'basic.dart';
 import 'framework.dart';

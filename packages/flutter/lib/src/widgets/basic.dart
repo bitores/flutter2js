@@ -2,25 +2,25 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/ui.dart' as ui show Image, ImageFilter;
+import '../../ui.dart' as ui show Image, ImageFilter;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
+import '../../services.dart';
 
 import 'debug.dart';
 import 'framework.dart';
 
-export 'package:flutter/animation.dart';
-export 'package:flutter/foundation.dart'
+export '../../animation.dart';
+export '../../foundation.dart'
     show
         ChangeNotifier,
         FlutterErrorDetails,
         Listenable,
         TargetPlatform,
         ValueNotifier;
-export 'package:flutter/painting.dart';
-export 'package:flutter/rendering.dart'
+export '../../painting.dart';
+export '../../rendering.dart'
     show
         AlignmentTween,
         AlignmentGeometryTween,
@@ -222,13 +222,13 @@ class ShaderMask extends SingleChildRenderObjectWidget {
       Widget child})
       : super(key: key, child: child);
 
-  /// Called to create the [package:flutter/ui.dart.Shader] that generates the mask.
+  /// Called to create the [../../ui.dart.Shader] that generates the mask.
   ///
   /// The shader callback is called with the current size of the child so that
   /// it can customize the shader to the size and location of the child.
   ///
   /// Typically this will use a [LinearGradient] or [RadialGradient] to create
-  /// the [package:flutter/ui.dart.Shader], though the [package:flutter/ui.dart.ImageShader] class could also be
+  /// the [../../ui.dart.Shader], though the [../../ui.dart.ImageShader] class could also be
   /// used.
   final ShaderCallback shaderCallback;
 
@@ -4336,7 +4336,7 @@ class RichText extends LeafRenderObjectWidget {
   }
 }
 
-/// A widget that displays a [package:flutter/ui.dart.Image] directly.
+/// A widget that displays a [../../ui.dart.Image] directly.
 ///
 /// The image is painted using [paintImage], which describes the meanings of the
 /// various fields on this class in more detail.

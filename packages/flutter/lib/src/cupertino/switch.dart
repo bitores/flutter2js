@@ -3,12 +3,12 @@
 // found in the LICENSE file.
 
 import 'dart:math' as math;
-import 'package:flutter/ui.dart' show lerpDouble;
+import '../../ui.dart' show lerpDouble;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../rendering.dart';
+import '../../widgets.dart';
 
 import 'colors.dart';
 import 'thumb_painter.dart';
@@ -52,8 +52,7 @@ class CupertinoSwitch extends StatefulWidget {
     @required this.value,
     @required this.onChanged,
     this.activeColor: CupertinoColors.activeGreen,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   /// Whether this switch is on or off.
   final bool value;
@@ -118,8 +117,7 @@ class _CupertinoSwitchRenderObjectWidget extends LeafRenderObjectWidget {
     this.activeColor,
     this.onChanged,
     this.vsync,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   final bool value;
   final Color activeColor;
@@ -169,8 +167,7 @@ class _RenderCupertinoSwitch extends RenderConstrainedBox {
     ValueChanged<bool> onChanged,
     @required TextDirection textDirection,
     @required TickerProvider vsync,
-  })
-      : _value = value,
+  })  : _value = value,
         _activeColor = activeColor,
         _onChanged = onChanged,
         _textDirection = textDirection,

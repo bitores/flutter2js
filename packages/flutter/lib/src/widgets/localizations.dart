@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 import 'dart:async';
-import 'package:flutter/ui.dart' show Locale;
+import '../../ui.dart' show Locale;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'basic.dart';
 import 'binding.dart';

@@ -4,8 +4,8 @@
 
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
 
 /// A description of a [Scrollable]'s contents, useful for modeling the state
 /// of its viewport.

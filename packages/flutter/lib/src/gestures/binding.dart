@@ -4,9 +4,9 @@
 
 import 'dart:async';
 import 'dart:collection';
-import 'package:flutter/ui.dart' as ui show window, PointerDataPacket;
+import '../../ui.dart' as ui show window, PointerDataPacket;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'arena.dart';
 import 'converter.dart';
@@ -109,8 +109,8 @@ abstract class GestureBindingMixin implements GestureBinding {
       try {
         entry.target.handleEvent(event, entry);
       } catch (exception, stack) {
-        FlutterError
-            .reportError(new FlutterErrorDetailsForPointerEventDispatcher(
+        FlutterError.reportError(
+            new FlutterErrorDetailsForPointerEventDispatcher(
                 exception: exception,
                 stack: stack,
                 library: 'gesture library',
@@ -242,8 +242,8 @@ abstract class GestureBinding extends BindingBase
       try {
         entry.target.handleEvent(event, entry);
       } catch (exception, stack) {
-        FlutterError
-            .reportError(new FlutterErrorDetailsForPointerEventDispatcher(
+        FlutterError.reportError(
+            new FlutterErrorDetailsForPointerEventDispatcher(
                 exception: exception,
                 stack: stack,
                 library: 'gesture library',

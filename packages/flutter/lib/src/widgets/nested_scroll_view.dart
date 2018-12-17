@@ -5,12 +5,12 @@
 import 'dart:async';
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/physics.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/scheduler.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../painting.dart';
+import '../../physics.dart';
+import '../../rendering.dart';
+import '../../scheduler.dart';
 
 import 'basic.dart';
 import 'framework.dart';

@@ -4,7 +4,7 @@
 
 import 'dart:collection';
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'events.dart';
 

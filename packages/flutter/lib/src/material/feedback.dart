@@ -4,8 +4,8 @@
 
 import 'dart:async';
 
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
+import '../../services.dart';
+import '../../widgets.dart';
 
 import 'theme.dart';
 

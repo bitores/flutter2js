@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
 
 import 'basic.dart';
 import 'framework.dart';
 
-export 'package:flutter/rendering.dart' show AxisDirection, GrowthDirection;
+export '../../rendering.dart' show AxisDirection, GrowthDirection;
 
 /// A widget that is bigger on the inside.
 ///

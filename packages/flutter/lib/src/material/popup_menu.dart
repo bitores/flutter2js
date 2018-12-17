@@ -4,9 +4,9 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter/scheduler.dart';
+import '../../foundation.dart';
+import '../../widgets.dart';
+import '../../scheduler.dart';
 
 import 'constants.dart';
 import 'divider.dart';

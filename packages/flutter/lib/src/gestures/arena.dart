@@ -4,7 +4,7 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'debug.dart';
 
@@ -201,11 +201,8 @@ class GestureArenaManager {
       int pointer, GestureArenaMember member, GestureDisposition disposition) {
     final _GestureArena state = _arenas[pointer];
     if (state == null) return; // This arena has already resolved.
-    assert(_debugLogDiagnostic(
-        pointer,
-        '${ disposition == GestureDisposition.accepted
-            ? "Accepting"
-            : "Rejecting" }: $member'));
+    assert(_debugLogDiagnostic(pointer,
+        '${disposition == GestureDisposition.accepted ? "Accepting" : "Rejecting"}: $member'));
     assert(state.members.contains(member));
     if (disposition == GestureDisposition.rejected) {
       state.members.remove(member);
@@ -267,10 +264,8 @@ class GestureArenaManager {
       if (debugPrintGestureArenaDiagnostics) {
         final int count = state != null ? state.members.length : null;
         final String s = count != 1 ? 's' : '';
-        debugPrint('Gesture arena ${pointer.toString().padRight(
-            4)} ❙ $message${ count != null
-            ? " with $count member$s."
-            : ""}');
+        debugPrint(
+            'Gesture arena ${pointer.toString().padRight(4)} ❙ $message${count != null ? " with $count member$s." : ""}');
       }
       return true;
     }());

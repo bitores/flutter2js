@@ -4,10 +4,10 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter/services.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
+import '../../scheduler.dart';
+import '../../services.dart';
 
 import 'basic.dart';
 import 'editable_text.dart';

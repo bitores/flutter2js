@@ -5,11 +5,11 @@
 import 'dart:async';
 import 'package:flutter2js/io.dart' show File;
 import 'dart:typed_data';
-import 'package:flutter/ui.dart' as ui show instantiateImageCodec, Codec;
-import 'package:flutter/ui.dart' show Size, Locale, TextDirection, hashValues;
+import '../../ui.dart' as ui show instantiateImageCodec, Codec;
+import '../../ui.dart' show Size, Locale, TextDirection, hashValues;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart';
+import '../../foundation.dart';
+import '../../services.dart';
 import 'package:http/http.dart' as http;
 
 import 'binding.dart';
@@ -162,7 +162,7 @@ class ImageConfiguration {
 /// The type argument does not have to be specified when using the type as an
 /// argument (where any image provider is acceptable).
 ///
-/// The following image formats are supported: {@macro flutter.package:flutter/ui.dart.imageFormats}
+/// The following image formats are supported: {@macro flutter.../../ui.dart.imageFormats}
 ///
 /// ## Sample code
 ///
@@ -232,7 +232,7 @@ class ImageConfiguration {
 ///   @override
 ///   Widget build(BuildContext context) {
 ///     return new RawImage(
-///       image: _imageInfo?.image, // this is a package:flutter/ui.dart Image object
+///       image: _imageInfo?.image, // this is a ../../ui.dart Image object
 ///       scale: _imageInfo?.scale ?? 1.0,
 ///     );
 ///   }
@@ -425,8 +425,8 @@ class NetworkImage extends ImageProvider<NetworkImage> {
     final http.Response response =
         await _httpClient.get(resolved, headers: headers);
     if (response == null || response.statusCode != 200)
-      throw new Exception('HTTP request failed, statusCode: ${response
-          ?.statusCode}, $resolved');
+      throw new Exception(
+          'HTTP request failed, statusCode: ${response?.statusCode}, $resolved');
 
     final Uint8List bytes = response.bodyBytes;
     if (bytes.lengthInBytes == 0)

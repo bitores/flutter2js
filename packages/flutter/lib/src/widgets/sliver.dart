@@ -4,14 +4,14 @@
 
 import 'dart:collection' show SplayTreeMap, HashMap;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
 
 import 'automatic_keep_alive.dart';
 import 'basic.dart';
 import 'framework.dart';
 
-export 'package:flutter/rendering.dart'
+export '../../rendering.dart'
     show
         SliverGridDelegate,
         SliverGridDelegateWithFixedCrossAxisCount,

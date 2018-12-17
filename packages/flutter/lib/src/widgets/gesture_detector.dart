@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/rendering.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../rendering.dart';
 
 import 'basic.dart';
 import 'framework.dart';
 
-export 'package:flutter/gestures.dart'
+export '../../gestures.dart'
     show
         DragDownDetails,
         DragStartDetails,

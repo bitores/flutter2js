@@ -5,9 +5,9 @@
 import 'dart:async';
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/physics.dart';
-import 'package:flutter/rendering.dart';
+import '../../foundation.dart';
+import '../../physics.dart';
+import '../../rendering.dart';
 
 import 'basic.dart';
 import 'debug.dart';

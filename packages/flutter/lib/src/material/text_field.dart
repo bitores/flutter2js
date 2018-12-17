@@ -4,11 +4,11 @@
 
 import 'dart:collection';
 
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
+import '../../cupertino.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
+import '../../services.dart';
+import '../../widgets.dart';
 
 import 'feedback.dart';
 import 'ink_well.dart' show InteractiveInkFeature;
@@ -17,7 +17,7 @@ import 'material.dart';
 import 'text_selection.dart';
 import 'theme.dart';
 
-export 'package:flutter/services.dart' show TextInputType;
+export '../../services.dart' show TextInputType;
 
 /// A material design text field.
 ///

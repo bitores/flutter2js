@@ -4,9 +4,9 @@
 
 import 'dart:developer';
 import 'package:flutter2js/io.dart' show Platform;
-import 'package:flutter/ui.dart' as ui show Scene, SceneBuilder, window;
+import '../../ui.dart' as ui show Scene, SceneBuilder, window;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 import 'package:vector_math/vector_math_64.dart';
 
 import 'binding.dart';

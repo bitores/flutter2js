@@ -3,13 +3,13 @@
 // found in the LICENSE file.
 
 import 'dart:async';
-import 'package:flutter/ui.dart' as ui show Image, Codec, FrameInfo;
-import 'package:flutter/ui.dart' show hashValues;
+import '../../ui.dart' as ui show Image, Codec, FrameInfo;
+import '../../ui.dart' show hashValues;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/scheduler.dart';
+import '../../foundation.dart';
+import '../../scheduler.dart';
 
-/// A [package:flutter/ui.dart.Image] object with its corresponding scale.
+/// A [../../ui.dart.Image] object with its corresponding scale.
 ///
 /// ImageInfo objects are used by [ImageStream] objects to represent the
 /// actual data of the image once it has been obtained.
@@ -33,7 +33,7 @@ class ImageInfo {
   ///
   /// For example, if this is 2.0 it means that there are four image pixels for
   /// every one logical pixel, and the image's actual width and height (as given
-  /// by the [package:flutter/ui.dart.Image.width] and [package:flutter/ui.dart.Image.height] properties) are double the
+  /// by the [../../ui.dart.Image.width] and [../../ui.dart.Image.height] properties) are double the
   /// height and width that should be used when painting the image (e.g. in the
   /// arguments given to [Canvas.drawImage]).
   final double scale;
@@ -66,7 +66,7 @@ typedef void ImageListener(ImageInfo image, bool synchronousCall);
 
 /// A handle to an image resource.
 ///
-/// ImageStream represents a handle to a [package:flutter/ui.dart.Image] object and its scale
+/// ImageStream represents a handle to a [../../ui.dart.Image] object and its scale
 /// (together represented by an [ImageInfo] object). The underlying image object
 /// might change over time, either because the image is animating or because the
 /// underlying image resource was mutated.
@@ -171,7 +171,7 @@ class ImageStream extends Diagnosticable {
   }
 }
 
-/// Base class for those that manage the loading of [package:flutter/ui.dart.Image] objects for
+/// Base class for those that manage the loading of [../../ui.dart.Image] objects for
 /// [ImageStream]s.
 ///
 /// [ImageStreamListener] objects are rarely constructed directly. Generally, an
@@ -250,7 +250,7 @@ abstract class ImageStreamCompleter extends Diagnosticable {
   }
 }
 
-/// Manages the loading of [package:flutter/ui.dart.Image] objects for static [ImageStream]s (those
+/// Manages the loading of [../../ui.dart.Image] objects for static [ImageStream]s (those
 /// with only one frame).
 class OneFrameImageStreamCompleter extends ImageStreamCompleter {
   /// Creates a manager for one-frame [ImageStream]s.

@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/ui.dart' as ui show ImageFilter, Gradient;
+import '../../ui.dart' as ui show ImageFilter, Gradient;
 
-import 'package:flutter/animation.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/semantics.dart';
+import '../../animation.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../painting.dart';
+import '../../semantics.dart';
 
 import 'package:vector_math/vector_math_64.dart';
 
@@ -16,7 +16,7 @@ import 'box.dart';
 import 'layer.dart';
 import 'object.dart';
 
-export 'package:flutter/gestures.dart'
+export '../../gestures.dart'
     show
         PointerEvent,
         PointerDownEvent,

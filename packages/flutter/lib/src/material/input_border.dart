@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 import 'dart:math' as math;
-import 'package:flutter/ui.dart' show lerpDouble;
+import '../../ui.dart' show lerpDouble;
 
-import 'package:flutter/widgets.dart';
+import '../../widgets.dart';
 
 /// Defines the appearance of an [InputDecorator]'s border.
 ///

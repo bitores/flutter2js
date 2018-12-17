@@ -6,7 +6,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 import 'package:http/http.dart' as http;
 
 import 'http_client.dart';

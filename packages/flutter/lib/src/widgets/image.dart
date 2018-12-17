@@ -6,9 +6,9 @@ import 'dart:async';
 import 'dart:typed_data';
 
 import 'package:flutter2js/flutter_internals.dart' show File;
-import 'package:flutter/foundation.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/services.dart';
+import '../../foundation.dart';
+import '../../painting.dart';
+import '../../services.dart';
 
 import 'basic.dart';
 import 'framework.dart';
@@ -16,7 +16,7 @@ import 'localizations.dart';
 import 'media_query.dart';
 import 'ticker_provider.dart';
 
-export 'package:flutter/painting.dart'
+export '../../painting.dart'
     show
         AssetImage,
         ExactAssetImage,
@@ -100,7 +100,7 @@ Future<Null> precacheImage(ImageProvider provider, BuildContext context,
 ///  * [new Image.file], for obtaining an image from a [File].
 ///  * [new Image.memory], for obtaining an image from a [Uint8List].
 ///
-/// The following image formats are supported: {@macro flutter.package:flutter/ui.dart.imageFormats}
+/// The following image formats are supported: {@macro flutter.../../ui.dart.imageFormats}
 ///
 /// To automatically perform pixel-density-aware asset resolution, specify the
 /// image using an [AssetImage] and make sure that a [MaterialApp], [WidgetsApp],

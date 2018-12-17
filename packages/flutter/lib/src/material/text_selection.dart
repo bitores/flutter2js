@@ -4,9 +4,9 @@
 
 import 'dart:math' as math;
 
-import 'package:flutter/widgets.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
+import '../../widgets.dart';
+import '../../rendering.dart';
+import '../../services.dart';
 
 import 'flat_button.dart';
 import 'material.dart';

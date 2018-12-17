@@ -4,7 +4,7 @@
 
 import 'dart:math' as math;
 
-import 'package:flutter/widgets.dart';
+import '../../widgets.dart';
 
 import 'colors.dart';
 
@@ -18,8 +18,7 @@ class CupertinoActivityIndicator extends StatefulWidget {
   const CupertinoActivityIndicator({
     Key key,
     this.animating: true,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   /// Whether the activity indicator is running its animation.
   ///
@@ -91,8 +90,7 @@ final RRect _kTickFundamentalRRect =
 class _CupertinoActivityIndicatorPainter extends CustomPainter {
   _CupertinoActivityIndicatorPainter({
     this.position,
-  })
-      : super(repaint: position);
+  }) : super(repaint: position);
 
   final Animation<double> position;
 

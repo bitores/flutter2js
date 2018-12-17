@@ -4,9 +4,9 @@
 
 import 'dart:math' as math;
 
-import 'package:flutter/widgets.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
+import '../../widgets.dart';
+import '../../rendering.dart';
+import '../../services.dart';
 
 import 'button.dart';
 
@@ -66,8 +66,7 @@ class _TextSelectionToolbar extends StatelessWidget {
     this.handleCopy,
     this.handlePaste,
     this.handleSelectAll,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   final TextSelectionDelegate delegate;
 

@@ -4,7 +4,7 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'binding.dart';
 
@@ -135,8 +135,7 @@ class Ticker {
       if (isActive) {
         throw new FlutterError('A ticker was started twice.\n'
             'A ticker that is already active cannot be started again without first stopping it.\n'
-            'The affected ticker was: ${ toString(
-            debugIncludeStack: true) }');
+            'The affected ticker was: ${toString(debugIncludeStack: true)}');
       }
       return true;
     }());
@@ -313,8 +312,7 @@ class Ticker {
         buffer.writeln();
         buffer.writeln(
             'The stack trace when the $runtimeType was actually created was:');
-        FlutterError
-            .defaultStackFilter(
+        FlutterError.defaultStackFilter(
                 _debugCreationStack.toString().trimRight().split('\n'))
             .forEach(buffer.writeln);
       }
@@ -426,9 +424,7 @@ class TickerFuture implements Future<Null> {
 
   @override
   String toString() =>
-      '${describeIdentity(this)}(${ _completed == null ? "active" : _completed
-          ? "complete"
-          : "canceled" })';
+      '${describeIdentity(this)}(${_completed == null ? "active" : _completed ? "complete" : "canceled"})';
 }
 
 /// Exception thrown by [Ticker] objects on the [TickerFuture.orCancel] future

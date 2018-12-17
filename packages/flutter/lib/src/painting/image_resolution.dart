@@ -5,10 +5,10 @@
 import 'dart:async';
 import 'dart:collection';
 import 'dart:convert';
-import 'package:flutter/ui.dart' show hashValues;
+import '../../ui.dart' show hashValues;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart';
+import '../../foundation.dart';
+import '../../services.dart';
 
 import 'image_provider.dart';
 

@@ -3,11 +3,11 @@
 // found in the LICENSE file.
 
 import 'dart:collection';
-import 'package:flutter/ui.dart' as ui show ImageFilter, Picture, SceneBuilder;
-import 'package:flutter/ui.dart' show Offset;
+import '../../ui.dart' as ui show ImageFilter, Picture, SceneBuilder;
+import '../../ui.dart' show Offset;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/painting.dart';
+import '../../foundation.dart';
+import '../../painting.dart';
 import 'package:vector_math/vector_math_64.dart';
 
 /// A composited layer.

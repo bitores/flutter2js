@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/browser_client.dart' as http;
 

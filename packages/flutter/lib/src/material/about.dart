@@ -5,8 +5,8 @@
 import 'dart:async';
 
 import 'package:flutter2js/io.dart' show Platform;
-import 'package:flutter/widgets.dart';
-import 'package:flutter/foundation.dart';
+import '../../widgets.dart';
+import '../../foundation.dart';
 
 import 'app_bar.dart';
 import 'debug.dart';

@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/ui.dart' show ImageFilter;
-import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart';
+import '../../ui.dart' show ImageFilter;
+import '../../foundation.dart';
+import '../../widgets.dart';
 
 import 'colors.dart';
 
@@ -66,8 +66,7 @@ class CupertinoDialog extends StatelessWidget {
   const CupertinoDialog({
     Key key,
     this.child,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   /// The widget below this widget in the tree.
   final Widget child;
@@ -117,8 +116,7 @@ class CupertinoAlertDialog extends StatelessWidget {
     this.title,
     this.content,
     this.actions,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   /// The (optional) title of the dialog is displayed in a large font at the top
   /// of the dialog.
@@ -260,8 +258,7 @@ class _CupertinoButtonBar extends StatelessWidget {
   const _CupertinoButtonBar({
     Key key,
     this.children,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   final List<Widget> children;
 

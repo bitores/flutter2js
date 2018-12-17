@@ -3,15 +3,15 @@
 // found in the LICENSE file.
 
 import 'dart:async';
-import 'package:flutter/ui.dart' show TextAffinity, hashValues;
+import '../../ui.dart' show TextAffinity, hashValues;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'message_codec.dart';
 import 'system_channels.dart';
 import 'text_editing.dart';
 
-export 'package:flutter/ui.dart' show TextAffinity;
+export '../../ui.dart' show TextAffinity;
 
 /// The type of information for which to optimize the text input control.
 ///

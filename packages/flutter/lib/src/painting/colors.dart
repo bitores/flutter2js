@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 import 'dart:math' as math;
-import 'package:flutter/ui.dart' show Color, lerpDouble, hashValues;
+import '../../ui.dart' show Color, lerpDouble, hashValues;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 /// A color represented using [alpha], [hue], [saturation], and [value].
 ///

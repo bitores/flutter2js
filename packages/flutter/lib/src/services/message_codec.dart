@@ -4,8 +4,8 @@
 
 import 'dart:typed_data';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/ui.dart' show hashValues;
+import '../../foundation.dart';
+import '../../ui.dart' show hashValues;
 
 import 'platform_channel.dart';
 

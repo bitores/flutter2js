@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'basic_types.dart';
 import 'border_radius.dart';
@@ -162,8 +162,7 @@ abstract class BoxBorder extends ShapeBorder {
     }
     throw new FlutterError(
         'BoxBorder.lerp can only interpolate Border and BorderDirectional classes.\n'
-        'BoxBorder.lerp() was called with two objects of type ${a
-            .runtimeType} and ${b.runtimeType}:\n'
+        'BoxBorder.lerp() was called with two objects of type ${a.runtimeType} and ${b.runtimeType}:\n'
         '  $a\n'
         '  $b\n'
         'However, only Border and BorderDirectional classes are supported by this method. '

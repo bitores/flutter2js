@@ -3,17 +3,17 @@
 // found in the LICENSE file.
 
 import 'package:flutter2js/flutter_internals.dart' as flutter2js;
-import 'package:flutter/foundation.dart';
-import 'package:flutter/painting.dart' show MatrixUtils, TransformProperty;
-import 'package:flutter/services.dart';
-import 'package:flutter/ui.dart' as ui;
-import 'package:flutter/ui.dart'
+import '../../foundation.dart';
+import '../../painting.dart' show MatrixUtils, TransformProperty;
+import '../../services.dart';
+import '../../ui.dart' as ui;
+import '../../ui.dart'
     show Offset, Rect, SemanticsAction, SemanticsFlag, TextDirection;
 import 'package:vector_math/vector_math_64.dart';
 
 import 'semantics_event.dart';
 
-export 'package:flutter/ui.dart' show SemanticsAction;
+export '../../ui.dart' show SemanticsAction;
 
 export 'semantics_event.dart';
 
@@ -223,8 +223,7 @@ class _SemanticsDiagnosticableNode extends DiagnosticableNode<SemanticsNode> {
     @required SemanticsNode value,
     @required DiagnosticsTreeStyle style,
     @required this.childOrder,
-  })
-      : super(
+  }) : super(
           name: name,
           value: value,
           style: style,
@@ -518,8 +517,7 @@ class SemanticsNode extends AbstractNode with DiagnosticableTreeMixin {
   SemanticsNode({
     this.key,
     VoidCallback showOnScreen,
-  })
-      : id = _generateNewId(),
+  })  : id = _generateNewId(),
         _showOnScreen = showOnScreen;
 
   /// Creates a semantic node to represent the root of the semantics tree.
@@ -529,8 +527,7 @@ class SemanticsNode extends AbstractNode with DiagnosticableTreeMixin {
     this.key,
     VoidCallback showOnScreen,
     SemanticsOwner owner,
-  })
-      : id = 0,
+  })  : id = 0,
         _showOnScreen = showOnScreen {
     attach(owner);
   }
@@ -650,8 +647,7 @@ class SemanticsNode extends AbstractNode with DiagnosticableTreeMixin {
         final StringBuffer mutationErrors = new StringBuffer();
         if (newChildren.length != _debugPreviousSnapshot.length) {
           mutationErrors.writeln(
-              'The list\'s length has changed from ${_debugPreviousSnapshot
-                  .length} '
+              'The list\'s length has changed from ${_debugPreviousSnapshot.length} '
               'to ${newChildren.length}.');
         } else {
           for (int i = 0; i < newChildren.length; i++) {

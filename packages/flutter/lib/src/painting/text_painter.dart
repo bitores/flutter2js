@@ -2,17 +2,17 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/ui.dart' as ui
+import '../../ui.dart' as ui
     show Paragraph, ParagraphBuilder, ParagraphConstraints, ParagraphStyle;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/services.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../services.dart';
 
 import 'basic_types.dart';
 import 'text_span.dart';
 
-export 'package:flutter/services.dart' show TextRange, TextSelection;
+export '../../services.dart' show TextRange, TextSelection;
 
 final String _kZeroWidthSpace = new String.fromCharCode(0x200B);
 

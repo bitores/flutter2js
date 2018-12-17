@@ -4,9 +4,9 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/scheduler.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
+import '../../scheduler.dart';
 
 import 'basic.dart';
 import 'binding.dart';
@@ -485,7 +485,7 @@ class Navigator extends StatefulWidget {
 
   /// The name of the first route to show.
   ///
-  /// By default, this defers to [package:flutter/ui.dart.Window.defaultRouteName].
+  /// By default, this defers to [../../ui.dart.Window.defaultRouteName].
   ///
   /// If this string contains any `/` characters, then the string is split on
   /// those characters and substrings from the start of the string up to each
@@ -517,7 +517,7 @@ class Navigator extends StatefulWidget {
   ///
   /// See also:
   ///
-  ///  * [package:flutter/ui.dart.Window.defaultRouteName], which reflects the route that the
+  ///  * [../../ui.dart.Window.defaultRouteName], which reflects the route that the
   ///    application was started with.
   static const String defaultRouteName = '/';
 

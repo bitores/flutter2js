@@ -5,7 +5,7 @@
 import 'dart:collection';
 import 'dart:developer' show Timeline;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'basic.dart';
 import 'framework.dart';

@@ -3,11 +3,11 @@
 // found in the LICENSE file.
 
 import 'dart:math' as math;
-import 'package:flutter/ui.dart' show lerpDouble;
+import '../../ui.dart' show lerpDouble;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
+import '../../widgets.dart';
 
 import 'colors.dart';
 import 'input_border.dart';

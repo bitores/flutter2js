@@ -3,12 +3,12 @@
 // found in the LICENSE file.
 
 import 'dart:math' as math;
-import 'package:flutter/ui.dart' as ui show TextBox;
+import '../../ui.dart' as ui show TextBox;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/semantics.dart';
-import 'package:flutter/services.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../semantics.dart';
+import '../../services.dart';
 
 import 'box.dart';
 import 'object.dart';

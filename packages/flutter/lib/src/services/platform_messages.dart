@@ -5,8 +5,8 @@
 import 'dart:async';
 import 'dart:typed_data';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/ui.dart' as ui;
+import '../../foundation.dart';
+import '../../ui.dart' as ui;
 
 import 'platform_channel.dart';
 

@@ -4,8 +4,8 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../widgets.dart';
 
 // All values eyeballed.
 const Color _kScrollbarColor = const Color(0x99777777);
@@ -39,8 +39,7 @@ class CupertinoScrollbar extends StatefulWidget {
   const CupertinoScrollbar({
     Key key,
     @required this.child,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   /// The subtree to place inside the [CupertinoScrollbar].
   ///

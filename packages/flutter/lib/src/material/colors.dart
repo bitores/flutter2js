@@ -2,9 +2,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/ui.dart' show Color;
+import '../../ui.dart' show Color;
 
-import 'package:flutter/painting.dart';
+import '../../painting.dart';
 
 /// Defines a single color as well a color swatch with ten shades of the color.
 ///

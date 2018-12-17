@@ -6,8 +6,8 @@ import 'dart:async';
 import 'dart:collection';
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../widgets.dart';
 
 import 'app_bar.dart';
 import 'bottom_sheet.dart';

@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/ui.dart' show ImageFilter;
+import '../../ui.dart' show ImageFilter;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../widgets.dart';
 
 import 'colors.dart';
 
@@ -45,8 +45,7 @@ class CupertinoTabBar extends StatelessWidget implements PreferredSizeWidget {
     this.activeColor: CupertinoColors.activeBlue,
     this.inactiveColor: CupertinoColors.inactiveGray,
     this.iconSize: 30.0,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   /// The interactive items laid out within the bottom navigation bar.
   final List<BottomNavigationBarItem> items;

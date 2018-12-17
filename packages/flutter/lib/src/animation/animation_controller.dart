@@ -3,17 +3,17 @@
 // found in the LICENSE file.
 
 import 'dart:async';
-import 'package:flutter/ui.dart' as ui show lerpDouble;
+import '../../ui.dart' as ui show lerpDouble;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/physics.dart';
-import 'package:flutter/scheduler.dart';
+import '../../foundation.dart';
+import '../../physics.dart';
+import '../../scheduler.dart';
 
 import 'animation.dart';
 import 'curves.dart';
 import 'listener_helpers.dart';
 
-export 'package:flutter/scheduler.dart' show TickerFuture, TickerCanceled;
+export '../../scheduler.dart' show TickerFuture, TickerCanceled;
 
 // Examples can assume:
 // AnimationController _controller;

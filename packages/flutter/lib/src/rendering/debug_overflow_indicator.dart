@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 import 'dart:math' as math;
-import 'package:flutter/ui.dart' as ui;
+import '../../ui.dart' as ui;
 
-import 'package:flutter/painting.dart';
+import '../../painting.dart';
 
 import 'object.dart';
 import 'stack.dart';

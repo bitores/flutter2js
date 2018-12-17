@@ -6,21 +6,21 @@ import 'dart:async';
 import 'dart:collection';
 import 'dart:developer';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
 
 import 'debug.dart';
 import 'focus_manager.dart';
 
-export 'package:flutter/ui.dart' show hashValues, hashList;
+export '../../ui.dart' show hashValues, hashList;
 
-export 'package:flutter/foundation.dart'
+export '../../foundation.dart'
     show FlutterError, debugPrint, debugPrintStack;
-export 'package:flutter/foundation.dart'
+export '../../foundation.dart'
     show VoidCallback, ValueChanged, ValueGetter, ValueSetter;
-export 'package:flutter/foundation.dart' show DiagnosticLevel;
-export 'package:flutter/foundation.dart' show Key, LocalKey, ValueKey;
-export 'package:flutter/rendering.dart'
+export '../../foundation.dart' show DiagnosticLevel;
+export '../../foundation.dart' show Key, LocalKey, ValueKey;
+export '../../rendering.dart'
     show RenderObject, RenderBox, debugDumpRenderTree, debugDumpLayerTree;
 
 // Examples can assume:

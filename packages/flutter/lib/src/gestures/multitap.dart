@@ -4,7 +4,7 @@
 
 import 'dart:async';
 
-import 'package:flutter/ui.dart' show Offset;
+import '../../ui.dart' show Offset;
 
 import 'arena.dart';
 import 'binding.dart';
@@ -314,8 +314,7 @@ class MultiTapGestureRecognizer extends GestureRecognizer {
   MultiTapGestureRecognizer({
     this.longTapDelay: Duration.zero,
     Object debugOwner,
-  })
-      : super(debugOwner: debugOwner);
+  }) : super(debugOwner: debugOwner);
 
   /// A pointer that might cause a tap has contacted the screen at a particular
   /// location.

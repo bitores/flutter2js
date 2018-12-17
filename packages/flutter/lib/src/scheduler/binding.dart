@@ -5,18 +5,18 @@
 import 'dart:async';
 import 'dart:collection';
 import 'dart:developer';
-import 'package:flutter/ui.dart' as ui show window;
-import 'package:flutter/ui.dart' show AppLifecycleState;
+import '../../ui.dart' as ui show window;
+import '../../ui.dart' show AppLifecycleState;
 
 import 'package:collection/collection.dart'
     show PriorityQueue, HeapPriorityQueue;
-import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart';
+import '../../foundation.dart';
+import '../../services.dart';
 
 import 'debug.dart';
 import 'priority.dart';
 
-export 'package:flutter/ui.dart' show AppLifecycleState, VoidCallback;
+export '../../ui.dart' show AppLifecycleState, VoidCallback;
 
 /// Slows down animations by this factor to help in development.
 double get timeDilation => _timeDilation;
@@ -362,8 +362,7 @@ abstract class SchedulerBinding extends BindingBase with ServicesBindingMixin {
                         '\nThis exception was thrown in the context of a task callback. '
                         'When the task callback was _registered_ (as opposed to when the '
                         'exception was thrown), this was the stack:');
-                    FlutterError
-                        .defaultStackFilter(
+                    FlutterError.defaultStackFilter(
                             callbackStack.toString().trimRight().split('\n'))
                         .forEach(information.writeln);
                   }));
@@ -473,8 +472,7 @@ abstract class SchedulerBinding extends BindingBase with ServicesBindingMixin {
               for (int id in callbacks.keys) {
                 final _FrameCallbackEntry entry = callbacks[id];
                 information.writeln('── callback $id ──');
-                FlutterError
-                    .defaultStackFilter(
+                FlutterError.defaultStackFilter(
                         entry.debugStack.toString().trimRight().split('\n'))
                     .forEach(information.writeln);
               }
@@ -509,8 +507,8 @@ abstract class SchedulerBinding extends BindingBase with ServicesBindingMixin {
       if (_FrameCallbackEntry.debugCurrentCallbackStack != null) {
         debugPrint(
             'When the current transient callback was registered, this was the stack:');
-        debugPrint(FlutterError
-            .defaultStackFilter(_FrameCallbackEntry.debugCurrentCallbackStack
+        debugPrint(FlutterError.defaultStackFilter(_FrameCallbackEntry
+                .debugCurrentCallbackStack
                 .toString()
                 .trimRight()
                 .split('\n'))
@@ -881,8 +879,7 @@ abstract class SchedulerBinding extends BindingBase with ServicesBindingMixin {
           frameTimeStampDescription.write('(warm-up frame)');
         }
         _debugBanner =
-            '▄▄▄▄▄▄▄▄ Frame ${_profileFrameNumber.toString().padRight(
-            7)}   ${frameTimeStampDescription.toString().padLeft(18)} ▄▄▄▄▄▄▄▄';
+            '▄▄▄▄▄▄▄▄ Frame ${_profileFrameNumber.toString().padRight(7)}   ${frameTimeStampDescription.toString().padLeft(18)} ▄▄▄▄▄▄▄▄';
         if (debugPrintBeginFrameBanner) debugPrint(_debugBanner);
       }
       return true;
@@ -961,12 +958,14 @@ abstract class SchedulerBinding extends BindingBase with ServicesBindingMixin {
     if (timeStamp.inHours > 0)
       buffer.write(
           '${timeStamp.inHours - timeStamp.inDays * Duration.hoursPerDay}h ');
-    if (timeStamp.inMinutes > 0) buffer.write('${timeStamp.inMinutes -
-          timeStamp.inHours * Duration.minutesPerHour}m ');
-    if (timeStamp.inSeconds > 0) buffer.write('${timeStamp.inSeconds -
-          timeStamp.inMinutes * Duration.secondsPerMinute}s ');
-    buffer.write('${timeStamp.inMilliseconds -
-        timeStamp.inSeconds * Duration.millisecondsPerSecond}');
+    if (timeStamp.inMinutes > 0)
+      buffer.write(
+          '${timeStamp.inMinutes - timeStamp.inHours * Duration.minutesPerHour}m ');
+    if (timeStamp.inSeconds > 0)
+      buffer.write(
+          '${timeStamp.inSeconds - timeStamp.inMinutes * Duration.secondsPerMinute}s ');
+    buffer.write(
+        '${timeStamp.inMilliseconds - timeStamp.inSeconds * Duration.millisecondsPerSecond}');
     final int microseconds = timeStamp.inMicroseconds -
         timeStamp.inMilliseconds * Duration.microsecondsPerMillisecond;
     if (microseconds > 0)
@@ -1002,8 +1001,7 @@ abstract class SchedulerBinding extends BindingBase with ServicesBindingMixin {
                       '\nThis exception was thrown in the context of a scheduler callback. '
                       'When the scheduler callback was _registered_ (as opposed to when the '
                       'exception was thrown), this was the stack:');
-                  FlutterError
-                      .defaultStackFilter(
+                  FlutterError.defaultStackFilter(
                           callbackStack.toString().trimRight().split('\n'))
                       .forEach(information.writeln);
                 }));
@@ -1211,8 +1209,7 @@ abstract class SchedulerBindingMixin implements SchedulerBinding {
                         '\nThis exception was thrown in the context of a task callback. '
                         'When the task callback was _registered_ (as opposed to when the '
                         'exception was thrown), this was the stack:');
-                    FlutterError
-                        .defaultStackFilter(
+                    FlutterError.defaultStackFilter(
                             callbackStack.toString().trimRight().split('\n'))
                         .forEach(information.writeln);
                   }));
@@ -1322,8 +1319,7 @@ abstract class SchedulerBindingMixin implements SchedulerBinding {
               for (int id in callbacks.keys) {
                 final _FrameCallbackEntry entry = callbacks[id];
                 information.writeln('── callback $id ──');
-                FlutterError
-                    .defaultStackFilter(
+                FlutterError.defaultStackFilter(
                         entry.debugStack.toString().trimRight().split('\n'))
                     .forEach(information.writeln);
               }
@@ -1358,8 +1354,8 @@ abstract class SchedulerBindingMixin implements SchedulerBinding {
       if (_FrameCallbackEntry.debugCurrentCallbackStack != null) {
         debugPrint(
             'When the current transient callback was registered, this was the stack:');
-        debugPrint(FlutterError
-            .defaultStackFilter(_FrameCallbackEntry.debugCurrentCallbackStack
+        debugPrint(FlutterError.defaultStackFilter(_FrameCallbackEntry
+                .debugCurrentCallbackStack
                 .toString()
                 .trimRight()
                 .split('\n'))
@@ -1730,8 +1726,7 @@ abstract class SchedulerBindingMixin implements SchedulerBinding {
           frameTimeStampDescription.write('(warm-up frame)');
         }
         _debugBanner =
-            '▄▄▄▄▄▄▄▄ Frame ${_profileFrameNumber.toString().padRight(
-            7)}   ${frameTimeStampDescription.toString().padLeft(18)} ▄▄▄▄▄▄▄▄';
+            '▄▄▄▄▄▄▄▄ Frame ${_profileFrameNumber.toString().padRight(7)}   ${frameTimeStampDescription.toString().padLeft(18)} ▄▄▄▄▄▄▄▄';
         if (debugPrintBeginFrameBanner) debugPrint(_debugBanner);
       }
       return true;
@@ -1810,12 +1805,14 @@ abstract class SchedulerBindingMixin implements SchedulerBinding {
     if (timeStamp.inHours > 0)
       buffer.write(
           '${timeStamp.inHours - timeStamp.inDays * Duration.hoursPerDay}h ');
-    if (timeStamp.inMinutes > 0) buffer.write('${timeStamp.inMinutes -
-          timeStamp.inHours * Duration.minutesPerHour}m ');
-    if (timeStamp.inSeconds > 0) buffer.write('${timeStamp.inSeconds -
-          timeStamp.inMinutes * Duration.secondsPerMinute}s ');
-    buffer.write('${timeStamp.inMilliseconds -
-        timeStamp.inSeconds * Duration.millisecondsPerSecond}');
+    if (timeStamp.inMinutes > 0)
+      buffer.write(
+          '${timeStamp.inMinutes - timeStamp.inHours * Duration.minutesPerHour}m ');
+    if (timeStamp.inSeconds > 0)
+      buffer.write(
+          '${timeStamp.inSeconds - timeStamp.inMinutes * Duration.secondsPerMinute}s ');
+    buffer.write(
+        '${timeStamp.inMilliseconds - timeStamp.inSeconds * Duration.millisecondsPerSecond}');
     final int microseconds = timeStamp.inMicroseconds -
         timeStamp.inMilliseconds * Duration.microsecondsPerMillisecond;
     if (microseconds > 0)
@@ -1851,8 +1848,7 @@ abstract class SchedulerBindingMixin implements SchedulerBinding {
                       '\nThis exception was thrown in the context of a scheduler callback. '
                       'When the scheduler callback was _registered_ (as opposed to when the '
                       'exception was thrown), this was the stack:');
-                  FlutterError
-                      .defaultStackFilter(
+                  FlutterError.defaultStackFilter(
                           callbackStack.toString().trimRight().split('\n'))
                       .forEach(information.writeln);
                 }));

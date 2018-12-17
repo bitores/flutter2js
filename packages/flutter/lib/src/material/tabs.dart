@@ -4,11 +4,11 @@
 
 import 'dart:async';
 import 'dart:math' as math;
-import 'package:flutter/ui.dart' show lerpDouble;
+import '../../ui.dart' show lerpDouble;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
+import '../../widgets.dart';
 
 import 'app_bar.dart';
 import 'colors.dart';

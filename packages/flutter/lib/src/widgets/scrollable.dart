@@ -4,10 +4,10 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/scheduler.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../rendering.dart';
+import '../../scheduler.dart';
 
 import 'basic.dart';
 import 'framework.dart';
@@ -22,7 +22,7 @@ import 'scroll_position_with_single_context.dart';
 import 'ticker_provider.dart';
 import 'viewport.dart';
 
-export 'package:flutter/physics.dart' show Tolerance;
+export '../../physics.dart' show Tolerance;
 
 /// Signature used by [Scrollable] to build the viewport through which the
 /// scrollable content is displayed.

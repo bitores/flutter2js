@@ -4,7 +4,7 @@
 
 /// The Flutter rendering tree.
 ///
-/// To use, import `package:flutter/rendering.dart`.
+/// To use, import `rendering.dart`.
 ///
 /// The [RenderObject] hierarchy is used by the Flutter Widgets library to
 /// implement its layout and painting back-end. Generally, while you may use
@@ -21,9 +21,9 @@
 /// binding, but relies on one being initialized with those features.
 library rendering;
 
-export 'package:flutter/foundation.dart'
+export 'foundation.dart'
     show VoidCallback, ValueChanged, ValueGetter, ValueSetter, DiagnosticLevel;
-export 'package:flutter/semantics.dart';
+export 'semantics.dart';
 export 'package:vector_math/vector_math_64.dart' show Matrix4;
 
 export 'src/rendering/animated_size.dart';

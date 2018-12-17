@@ -2,8 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../widgets.dart';
 import 'bottom_tab_bar.dart';
 
 /// Implements a tabbed iOS application's root layout and behavior structure.
@@ -88,8 +88,7 @@ class CupertinoTabScaffold extends StatefulWidget {
     Key key,
     @required this.tabBar,
     @required this.tabBuilder,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   /// The [tabBar] is a [CupertinoTabBar] drawn at the bottom of the screen
   /// that lets the user switch between different tabs in the main content area

@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 import 'dart:math' as math;
-import 'package:flutter/ui.dart' as ui show Gradient, lerpDouble;
+import '../../ui.dart' as ui show Gradient, lerpDouble;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'alignment.dart';
 import 'basic_types.dart';
@@ -47,7 +47,7 @@ _ColorsAndStops _interpolateColorsAndStops(List<Color> aColors,
 ///
 /// See also:
 ///
-///  * [package:flutter/ui.dart.Gradient], the class in the [package:flutter/ui.dart] library that is
+///  * [../../ui.dart.Gradient], the class in the [../../ui.dart] library that is
 ///    encapsulated by this class and its subclasses.
 @immutable
 abstract class Gradient {
@@ -215,7 +215,7 @@ abstract class Gradient {
 ///
 /// This class is used by [BoxDecoration] to represent gradients. This abstracts
 /// out the arguments to the [new ui.Gradient.linear] constructor from the
-/// `package:flutter/ui.dart` library.
+/// `../../ui.dart` library.
 ///
 /// A gradient has two anchor points, [begin] and [end]. The [begin] point
 /// corresponds to 0.0, and the [end] point corresponds to 1.0. These points are
@@ -270,8 +270,7 @@ class LinearGradient extends Gradient {
     @required List<Color> colors,
     List<double> stops,
     this.tileMode: TileMode.clamp,
-  })
-      : super(colors: colors, stops: stops);
+  }) : super(colors: colors, stops: stops);
 
   /// The offset at which stop 0.0 of the gradient is placed.
   ///
@@ -437,7 +436,7 @@ class LinearGradient extends Gradient {
 ///
 /// This class is used by [BoxDecoration] to represent gradients. This abstracts
 /// out the arguments to the [new ui.Gradient.radial] constructor from the
-/// `package:flutter/ui.dart` library.
+/// `../../ui.dart` library.
 ///
 /// A gradient has a [center] and a [radius]. The [center] point corresponds to
 /// 0.0, and the ring at [radius] from the center corresponds to 1.0. These
@@ -499,8 +498,7 @@ class RadialGradient extends Gradient {
     @required List<Color> colors,
     List<double> stops,
     this.tileMode: TileMode.clamp,
-  })
-      : super(colors: colors, stops: stops);
+  }) : super(colors: colors, stops: stops);
 
   /// The center of the gradient, as an offset into the (-1.0, -1.0) x (1.0, 1.0)
   /// square describing the gradient which will be mapped onto the paint box.

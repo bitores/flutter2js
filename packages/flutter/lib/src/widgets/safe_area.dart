@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'basic.dart';
 import 'debug.dart';
@@ -22,7 +22,7 @@ import 'media_query.dart';
 ///
 ///  * [Padding], for insetting widgets in general.
 ///  * [MediaQuery], from which the window padding is obtained.
-///  * [package:flutter/ui.dart.Window.padding], which reports the padding from the operating
+///  * [../../ui.dart.Window.padding], which reports the padding from the operating
 ///    system.
 class SafeArea extends StatelessWidget {
   /// Creates a widget that avoids operating system interfaces.

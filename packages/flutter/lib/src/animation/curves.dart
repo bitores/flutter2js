@@ -4,7 +4,7 @@
 
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 /// A mapping of the unit interval to the unit interval.
 ///
@@ -227,8 +227,7 @@ class Cubic extends Curve {
 
   @override
   String toString() {
-    return '$runtimeType(${a.toStringAsFixed(2)}, ${b.toStringAsFixed(2)}, ${c
-        .toStringAsFixed(2)}, ${d.toStringAsFixed(2)})';
+    return '$runtimeType(${a.toStringAsFixed(2)}, ${b.toStringAsFixed(2)}, ${c.toStringAsFixed(2)}, ${d.toStringAsFixed(2)})';
   }
 }
 

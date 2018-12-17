@@ -4,16 +4,16 @@
 
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/physics.dart';
-import 'package:flutter/ui.dart' as ui;
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../physics.dart';
+import '../../ui.dart' as ui;
 
 import 'overscroll_indicator.dart';
 import 'scroll_metrics.dart';
 import 'scroll_simulation.dart';
 
-export 'package:flutter/physics.dart'
+export '../../physics.dart'
     show Simulation, ScrollSpringSimulation, Tolerance;
 
 /// Determines the physics of a [Scrollable] widget.
@@ -162,7 +162,7 @@ class ScrollPhysics {
   /// The default accuracy to which scrolling is computed.
   static final Tolerance _kDefaultTolerance = new Tolerance(
       // TODO(ianh): Handle the case of the device pixel ratio changing.
-      // TODO(ianh): Get this from the local MediaQuery not package:flutter/ui.dart's window object.
+      // TODO(ianh): Get this from the local MediaQuery not ../../ui.dart's window object.
       velocity: 1.0 /
           (0.050 * ui.window.devicePixelRatio), // logical pixels per second
       distance: 1.0 / ui.window.devicePixelRatio // logical pixels

@@ -4,8 +4,8 @@
 
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/physics.dart';
+import '../../foundation.dart';
+import '../../physics.dart';
 
 /// An implementation of scroll physics that matches iOS.
 ///

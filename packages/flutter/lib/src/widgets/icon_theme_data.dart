@@ -2,8 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/ui.dart' show Color, hashValues;
-import 'package:flutter/ui.dart' as ui show lerpDouble;
+import '../../ui.dart' show Color, hashValues;
+import '../../ui.dart' as ui show lerpDouble;
 
 /// Defines the color, opacity, and size of icons.
 ///

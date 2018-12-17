@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'basic_types.dart';
 
@@ -307,8 +307,7 @@ class BorderRadius extends BorderRadiusGeometry {
   const BorderRadius.vertical({
     Radius top: Radius.zero,
     Radius bottom: Radius.zero,
-  })
-      : this.only(
+  }) : this.only(
           topLeft: top,
           topRight: top,
           bottomLeft: bottom,
@@ -320,8 +319,7 @@ class BorderRadius extends BorderRadiusGeometry {
   const BorderRadius.horizontal({
     Radius left: Radius.zero,
     Radius right: Radius.zero,
-  })
-      : this.only(
+  }) : this.only(
           topLeft: left,
           topRight: right,
           bottomLeft: left,
@@ -541,8 +539,7 @@ class BorderRadiusDirectional extends BorderRadiusGeometry {
   const BorderRadiusDirectional.vertical({
     Radius top: Radius.zero,
     Radius bottom: Radius.zero,
-  })
-      : this.only(
+  }) : this.only(
           topStart: top,
           topEnd: top,
           bottomStart: bottom,
@@ -554,8 +551,7 @@ class BorderRadiusDirectional extends BorderRadiusGeometry {
   const BorderRadiusDirectional.horizontal({
     Radius start: Radius.zero,
     Radius end: Radius.zero,
-  })
-      : this.only(
+  }) : this.only(
           topStart: start,
           topEnd: end,
           bottomStart: start,

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 /// The direction of a scroll, relative to the positive scroll offset axis given
 /// by an [AxisDirection] and a [GrowthDirection].

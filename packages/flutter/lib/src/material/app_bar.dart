@@ -4,10 +4,10 @@
 
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
+import '../../services.dart';
+import '../../widgets.dart';
 
 import 'back_button.dart';
 import 'constants.dart';

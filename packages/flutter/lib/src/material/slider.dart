@@ -4,10 +4,10 @@
 
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../rendering.dart';
+import '../../widgets.dart';
 
 import 'colors.dart';
 import 'constants.dart';

@@ -3,10 +3,10 @@
 // found in the LICENSE file.
 
 import 'dart:math' as math;
-import 'package:flutter/ui.dart' show lerpDouble;
+import '../../ui.dart' show lerpDouble;
 
-import 'package:flutter/animation.dart';
-import 'package:flutter/painting.dart';
+import '../../animation.dart';
+import '../../painting.dart';
 
 // How close the begin and end points must be to an axis to be considered
 // vertical or horizontal.

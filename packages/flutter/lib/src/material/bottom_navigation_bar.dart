@@ -5,8 +5,8 @@
 import 'dart:collection' show Queue;
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../widgets.dart';
 import 'package:vector_math/vector_math_64.dart' show Vector3;
 
 import 'colors.dart';

@@ -4,21 +4,21 @@
 
 import 'dart:async';
 import 'dart:developer' as developer;
-import 'package:flutter/ui.dart' show AppLifecycleState, Locale;
-import 'package:flutter/ui.dart' as ui show window;
+import '../../ui.dart' show AppLifecycleState, Locale;
+import '../../ui.dart' as ui show window;
 
 import 'package:flutter2js/flutter_internals.dart' as flutter2js;
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter/services.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../rendering.dart';
+import '../../scheduler.dart';
+import '../../services.dart';
 
 import 'app.dart';
 import 'focus_manager.dart';
 import 'framework.dart';
 
-export 'package:flutter/ui.dart' show AppLifecycleState, Locale;
+export '../../ui.dart' show AppLifecycleState, Locale;
 
 /// Interface for classes that register with the Widgets layer binding.
 ///

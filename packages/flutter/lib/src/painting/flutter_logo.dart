@@ -4,9 +4,9 @@
 
 import 'dart:math' as math;
 import 'dart:typed_data';
-import 'package:flutter/ui.dart' as ui show Gradient, TextBox, lerpDouble;
+import '../../ui.dart' as ui show Gradient, TextBox, lerpDouble;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'alignment.dart';
 import 'basic_types.dart';
@@ -48,8 +48,7 @@ class FlutterLogoDecoration extends Decoration {
     this.textColor: const Color(0xFF616161),
     this.style: FlutterLogoStyle.markOnly,
     this.margin: EdgeInsets.zero,
-  })
-      : _position = 0.0,
+  })  : _position = 0.0,
         // ignore: CONST_EVAL_TYPE_BOOL_NUM_STRING
         // (see https://github.com/dart-lang/sdk/issues/26980 for details about that ignore statement)
         _opacity = 1.0;

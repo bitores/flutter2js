@@ -5,20 +5,20 @@
 import 'dart:async';
 import 'dart:developer';
 import 'dart:typed_data';
-import 'package:flutter/ui.dart' as ui show window;
+import '../../ui.dart' as ui show window;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter/semantics.dart';
-import 'package:flutter/services.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../scheduler.dart';
+import '../../semantics.dart';
+import '../../services.dart';
 
 import 'box.dart';
 import 'debug.dart';
 import 'object.dart';
 import 'view.dart';
 
-export 'package:flutter/gestures.dart' show HitTestResult;
+export '../../gestures.dart' show HitTestResult;
 
 abstract class RendererBindingMixin implements RendererBinding {
   static void doInitInstances(RendererBinding binding) {

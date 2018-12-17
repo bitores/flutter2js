@@ -4,7 +4,7 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 /// A leaf node in the focus tree that can receive focus.
 ///

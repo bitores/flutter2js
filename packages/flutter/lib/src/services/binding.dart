@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 import 'dart:async';
-import 'package:flutter/ui.dart' as ui;
+import '../../ui.dart' as ui;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'asset_bundle.dart';
 import 'platform_messages.dart';

@@ -8,7 +8,7 @@
 
 import 'dart:async' show Future, Stream, StreamSubscription;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'framework.dart';
 

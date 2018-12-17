@@ -4,8 +4,8 @@
 
 import 'dart:async';
 
-import 'package:flutter/animation.dart';
-import 'package:flutter/foundation.dart';
+import '../../animation.dart';
+import '../../foundation.dart';
 
 import 'scroll_context.dart';
 import 'scroll_physics.dart';

@@ -5,7 +5,7 @@
 import 'dart:async';
 
 import 'package:flutter2js/flutter_internals.dart' as flutter2js;
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 /// Data stored on the system clipboard.
 ///

@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/painting.dart';
+import '../../painting.dart';
 
 /// The height of the toolbar component of the [AppBar].
 const double kToolbarHeight = 56.0;

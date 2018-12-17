@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/painting.dart';
+import '../../foundation.dart';
+import '../../painting.dart';
 
-export 'package:flutter/foundation.dart' show debugPrint;
+export '../../foundation.dart' show debugPrint;
 
 // Any changes to this file should be reflected in the debugAssertAllRenderVarsUnset()
 // function below.

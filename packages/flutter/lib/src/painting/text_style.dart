@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/ui.dart' as ui
+import '../../ui.dart' as ui
     show ParagraphStyle, TextStyle, lerpDouble;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'basic_types.dart';
 
@@ -540,7 +540,7 @@ class TextStyle extends Diagnosticable {
     );
   }
 
-  /// The style information for text runs, encoded for use by `package:flutter/ui.dart`.
+  /// The style information for text runs, encoded for use by `../../ui.dart`.
   ui.TextStyle getTextStyle({double textScaleFactor: 1.0}) {
     return new ui.TextStyle(
         color: color,
@@ -557,7 +557,7 @@ class TextStyle extends Diagnosticable {
         height: height);
   }
 
-  /// The style information for paragraphs, encoded for use by `package:flutter/ui.dart`.
+  /// The style information for paragraphs, encoded for use by `../../ui.dart`.
   ///
   /// The `textScaleFactor` argument must not be null. If omitted, it defaults
   /// to 1.0. The other arguments may be null. The `maxLines` argument, if

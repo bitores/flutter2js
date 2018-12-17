@@ -3,9 +3,9 @@
 // found in the LICENSE file.
 
 import 'dart:math' as math;
-import 'package:flutter/ui.dart' as ui show lerpDouble;
+import '../../ui.dart' as ui show lerpDouble;
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'basic_types.dart';
 

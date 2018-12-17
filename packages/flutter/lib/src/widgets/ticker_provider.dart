@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/scheduler.dart';
+import '../../foundation.dart';
+import '../../scheduler.dart';
 
 import 'framework.dart';
 
-export 'package:flutter/scheduler.dart' show TickerProvider;
+export '../../scheduler.dart' show TickerProvider;
 
 /// Enables or disables tickers (and thus animation controllers) in the widget
 /// subtree.

@@ -5,7 +5,7 @@
 import 'dart:math' as math;
 import 'dart:typed_data';
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 import 'package:vector_math/vector_math_64.dart';
 
 import 'basic_types.dart';
@@ -272,8 +272,7 @@ class TransformProperty extends DiagnosticsProperty<Matrix4> {
     bool showName: true,
     Object defaultValue: kNoDefaultValue,
     DiagnosticLevel level: DiagnosticLevel.info,
-  })
-      : super(
+  }) : super(
           name,
           value,
           showName: showName,

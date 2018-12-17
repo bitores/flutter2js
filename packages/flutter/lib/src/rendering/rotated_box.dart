@@ -4,9 +4,9 @@
 
 import 'dart:math' as math;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/painting.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../painting.dart';
 import 'package:vector_math/vector_math_64.dart';
 
 import 'box.dart';

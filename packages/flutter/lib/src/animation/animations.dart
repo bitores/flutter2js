@@ -2,8 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/ui.dart' show VoidCallback;
+import '../../foundation.dart';
+import '../../ui.dart' show VoidCallback;
 
 import 'animation.dart';
 import 'curves.dart';
@@ -230,8 +230,7 @@ class ProxyAnimation extends Animation<double>
   @override
   String toString() {
     if (parent == null)
-      return '$runtimeType(null; ${super.toStringDetails()} ${value
-          .toStringAsFixed(3)})';
+      return '$runtimeType(null; ${super.toStringDetails()} ${value.toStringAsFixed(3)})';
     return '$parent\u27A9$runtimeType';
   }
 }
@@ -401,8 +400,7 @@ class CurvedAnimation extends Animation<double>
         if (roundedTransformedValue != t) {
           throw new FlutterError('Invalid curve endpoint at $t.\n'
               'Curves must map 0.0 to near zero and 1.0 to near one but '
-              '${activeCurve
-              .runtimeType} mapped $t to $transformedValue, which '
+              '${activeCurve.runtimeType} mapped $t to $transformedValue, which '
               'is near $roundedTransformedValue.');
         }
         return true;
@@ -627,8 +625,7 @@ class AnimationMean extends CompoundAnimation<double> {
   AnimationMean({
     Animation<double> left,
     Animation<double> right,
-  })
-      : super(first: left, next: right);
+  }) : super(first: left, next: right);
 
   @override
   double get value => (first.value + next.value) / 2.0;

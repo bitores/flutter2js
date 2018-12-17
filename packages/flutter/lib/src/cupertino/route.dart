@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
+import '../../rendering.dart';
+import '../../widgets.dart';
 
 const double _kBackGestureWidth = 20.0;
 const double _kMinFlingVelocity = 1.0; // Screen widths per second.
@@ -84,8 +84,7 @@ class CupertinoPageRoute<T> extends PageRoute<T> {
     this.maintainState: true,
     bool fullscreenDialog: false,
     this.hostRoute,
-  })
-      : super(settings: settings, fullscreenDialog: fullscreenDialog) {
+  }) : super(settings: settings, fullscreenDialog: fullscreenDialog) {
     // ignore: prefer_asserts_in_initializer_lists , https://github.com/dart-lang/sdk/issues/31223
     assert(opaque); // PageRoute makes it return true.
   }
@@ -287,8 +286,7 @@ class CupertinoPageTransition extends StatelessWidget {
     @required Animation<double> secondaryRouteAnimation,
     @required this.child,
     @required bool linearTransition,
-  })
-      : _primaryPositionAnimation = linearTransition
+  })  : _primaryPositionAnimation = linearTransition
             ? _kRightMiddleTween.animate(primaryRouteAnimation)
             : _kRightMiddleTween.animate(new CurvedAnimation(
                 parent: primaryRouteAnimation,
@@ -349,8 +347,7 @@ class CupertinoFullscreenDialogTransition extends StatelessWidget {
     Key key,
     @required Animation<double> animation,
     @required this.child,
-  })
-      : _positionAnimation = _kBottomUpTween.animate(new CurvedAnimation(
+  })  : _positionAnimation = _kBottomUpTween.animate(new CurvedAnimation(
           parent: animation,
           curve: Curves.easeInOut,
         )),
@@ -384,8 +381,7 @@ class _CupertinoBackGestureDetector extends StatefulWidget {
     @required this.enabledCallback,
     @required this.onStartPopGesture,
     @required this.child,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   final Widget child;
 
@@ -654,8 +650,7 @@ class _CupertinoEdgeShadowPainter extends BoxPainter {
   _CupertinoEdgeShadowPainter(
     this._decoration,
     VoidCallback onChange,
-  )
-      : super(onChange);
+  ) : super(onChange);
 
   final _CupertinoEdgeShadowDecoration _decoration;
 

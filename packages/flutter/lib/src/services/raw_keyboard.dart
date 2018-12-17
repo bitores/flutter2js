@@ -4,7 +4,7 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'system_channels.dart';
 
@@ -118,8 +118,7 @@ class RawKeyDownEvent extends RawKeyEvent {
   /// Creates a key event that represents the user pressing a key.
   const RawKeyDownEvent({
     @required RawKeyEventData data,
-  })
-      : super(data: data);
+  }) : super(data: data);
 }
 
 /// The user has released a key on the keyboard.
@@ -127,8 +126,7 @@ class RawKeyUpEvent extends RawKeyEvent {
   /// Creates a key event that represents the user releasing a key.
   const RawKeyUpEvent({
     @required RawKeyEventData data,
-  })
-      : super(data: data);
+  }) : super(data: data);
 }
 
 RawKeyEvent _toRawKeyEvent(Map<String, dynamic> message) {

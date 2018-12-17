@@ -4,9 +4,9 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
+import '../../foundation.dart';
+import '../../rendering.dart';
+import '../../services.dart';
 
 import 'automatic_keep_alive.dart';
 import 'basic.dart';
@@ -19,9 +19,9 @@ import 'scroll_physics.dart';
 import 'scrollable.dart';
 import 'text_selection.dart';
 
-export 'package:flutter/services.dart'
+export '../../services.dart'
     show TextEditingValue, TextSelection, TextInputType;
-export 'package:flutter/rendering.dart' show SelectionChangedCause;
+export '../../rendering.dart' show SelectionChangedCause;
 
 /// Signature for the callback that reports when the user changes the selection
 /// (including the cursor location).

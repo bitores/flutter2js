@@ -6,7 +6,7 @@ import 'dart:async';
 import 'dart:typed_data';
 
 import 'package:flutter2js/flutter_internals.dart' as flutter2js;
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'message_codec.dart';
 import 'message_codecs.dart';
@@ -196,8 +196,8 @@ class MethodChannel {
     );
   }
 
-  Future<ByteData> _handleAsMethodCall(ByteData message,
-      Future<dynamic> handler(MethodCall call)) async {
+  Future<ByteData> _handleAsMethodCall(
+      ByteData message, Future<dynamic> handler(MethodCall call)) async {
     final MethodCall call = codec.decodeMethodCall(message);
     try {
       return codec.encodeSuccessEnvelope(await handler(call));

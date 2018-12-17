@@ -4,8 +4,8 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/ui.dart' show Offset;
+import '../../foundation.dart';
+import '../../ui.dart' show Offset;
 
 import 'arena.dart';
 import 'binding.dart';
@@ -543,8 +543,7 @@ class DelayedMultiDragGestureRecognizer
   DelayedMultiDragGestureRecognizer({
     this.delay: kLongPressTimeout,
     Object debugOwner,
-  })
-      : super(debugOwner: debugOwner) {
+  }) : super(debugOwner: debugOwner) {
     assert(delay != null);
   }
 

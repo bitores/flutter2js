@@ -2,8 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
+import '../../foundation.dart';
+import '../../gestures.dart';
 import 'package:vector_math/vector_math_64.dart';
 
 import 'binding.dart';

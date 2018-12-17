@@ -5,7 +5,7 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:flutter/foundation.dart' show ReadBuffer, WriteBuffer, required;
+import '../../foundation.dart' show ReadBuffer, WriteBuffer, required;
 
 import 'message_codec.dart';
 
@@ -299,8 +299,7 @@ class StandardMessageCodec implements MessageCodec<dynamic> {
       if (-0x7fffffff - 1 <= value && value <= 0x7fffffff) {
         buffer.putUint8(_kInt32);
         buffer.putInt32(value);
-      } else if (-0x7fffffff - 1 <= value &&
-          value <= 0x7fffffff) {
+      } else if (-0x7fffffff - 1 <= value && value <= 0x7fffffff) {
         buffer.putUint8(_kInt64);
         buffer.putInt64(value);
       } else {

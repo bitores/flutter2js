@@ -5,8 +5,8 @@
 import 'dart:async';
 import 'dart:collection';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/ui.dart' show Offset;
+import '../../foundation.dart';
+import '../../ui.dart' show Offset;
 
 import 'arena.dart';
 import 'binding.dart';
@@ -99,9 +99,7 @@ abstract class GestureRecognizer extends GestureArenaMember
           final String prefix =
               debugPrintGestureArenaDiagnostics ? ' ' * 19 + '❙ ' : '';
           debugPrint(
-              '$prefix$this calling $name callback.${ report?.isNotEmpty == true
-                  ? " $report"
-                  : "" }');
+              '$prefix$this calling $name callback.${report?.isNotEmpty == true ? " $report" : ""}');
         }
         return true;
       }());
@@ -279,8 +277,7 @@ abstract class PrimaryPointerGestureRecognizer
   PrimaryPointerGestureRecognizer({
     this.deadline,
     Object debugOwner,
-  })
-      : super(debugOwner: debugOwner);
+  }) : super(debugOwner: debugOwner);
 
   /// If non-null, the recognizer will call [didExceedDeadline] after this
   /// amount of time has elapsed since starting to track the primary pointer.

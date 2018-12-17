@@ -4,8 +4,8 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/scheduler.dart';
+import '../../foundation.dart';
+import '../../scheduler.dart';
 
 import 'framework.dart';
 import 'notification_listener.dart';

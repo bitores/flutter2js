@@ -4,8 +4,8 @@
 
 import 'dart:collection';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/semantics.dart';
+import '../../foundation.dart';
+import '../../semantics.dart';
 
 import 'package:vector_math/vector_math_64.dart';
 

@@ -3,8 +3,8 @@
 // found in the LICENSE file.
 
 import 'package:collection/collection.dart' show binarySearch;
-import 'package:flutter/animation.dart';
-import 'package:flutter/foundation.dart';
+import '../../animation.dart';
+import '../../foundation.dart';
 
 import 'basic.dart';
 import 'framework.dart';

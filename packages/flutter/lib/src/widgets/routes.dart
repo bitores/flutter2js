@@ -4,7 +4,7 @@
 
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
+import '../../foundation.dart';
 
 import 'basic.dart';
 import 'focus_manager.dart';

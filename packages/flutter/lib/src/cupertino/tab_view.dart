@@ -2,8 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../widgets.dart';
 
 import 'route.dart';
 
@@ -43,8 +43,7 @@ class CupertinoTabView extends StatelessWidget {
     this.onGenerateRoute,
     this.onUnknownRoute,
     this.navigatorObservers: const <NavigatorObserver>[],
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   /// The widget builder for the default route of the tab view
   /// ([Navigator.defaultRouteName], which is `/`).

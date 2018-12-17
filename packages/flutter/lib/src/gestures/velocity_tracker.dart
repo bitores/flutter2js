@@ -2,12 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/ui.dart' show Offset;
+import '../../foundation.dart';
+import '../../ui.dart' show Offset;
 
 import 'lsq_solver.dart';
 
-export 'package:flutter/ui.dart' show Offset;
+export '../../ui.dart' show Offset;
 
 /// A velocity in two dimensions.
 class Velocity {
@@ -76,8 +76,7 @@ class Velocity {
 
   @override
   String toString() =>
-      'Velocity(${pixelsPerSecond.dx.toStringAsFixed(1)}, ${pixelsPerSecond.dy
-          .toStringAsFixed(1)})';
+      'Velocity(${pixelsPerSecond.dx.toStringAsFixed(1)}, ${pixelsPerSecond.dy.toStringAsFixed(1)})';
 }
 
 /// A two dimensional velocity estimate.
@@ -122,8 +121,8 @@ class VelocityEstimate {
   final Offset offset;
 
   @override
-  String toString() => 'VelocityEstimate(${pixelsPerSecond.dx.toStringAsFixed(
-      1)}, ${pixelsPerSecond.dy.toStringAsFixed(1)})';
+  String toString() =>
+      'VelocityEstimate(${pixelsPerSecond.dx.toStringAsFixed(1)}, ${pixelsPerSecond.dy.toStringAsFixed(1)})';
 }
 
 class _PointAtTime {

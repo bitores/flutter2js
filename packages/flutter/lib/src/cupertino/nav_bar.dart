@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:flutter/ui.dart' show ImageFilter;
+import '../../ui.dart' show ImageFilter;
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
+import '../../foundation.dart';
+import '../../services.dart';
+import '../../widgets.dart';
 
 import 'button.dart';
 import 'colors.dart';
@@ -80,8 +80,7 @@ class CupertinoNavigationBar extends StatelessWidget
     this.trailing,
     this.backgroundColor: _kDefaultNavBarBackgroundColor,
     this.actionsForegroundColor: CupertinoColors.activeBlue,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   /// Widget to place at the start of the navigation bar. Normally a back button
   /// for a normal page or a cancel button for full page dialogs.
@@ -183,8 +182,7 @@ class CupertinoSliverNavigationBar extends StatelessWidget {
     this.trailing,
     this.backgroundColor: _kDefaultNavBarBackgroundColor,
     this.actionsForegroundColor: CupertinoColors.activeBlue,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   /// The navigation bar's title.
   ///
@@ -310,8 +308,7 @@ class _CupertinoPersistentNavigationBar extends StatelessWidget
     this.trailing,
     this.actionsForegroundColor,
     this.middleVisible,
-  })
-      : super(key: key);
+  }) : super(key: key);
 
   final Widget leading;
 
